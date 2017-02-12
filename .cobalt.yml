@@ -1,0 +1,9 @@
+name: Johnson Ooi's blog
+source: "./"
+dest: "build"
+ignore:
+  - .git/*
+  - build/*
+rss: rss.xml
+description: Some of my random thoughts.
+link: http://www.johnsonooi.com/
