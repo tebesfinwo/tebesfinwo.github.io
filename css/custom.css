@@ -2,6 +2,10 @@ a {
     color: #2980b9;
 }
 
+pre {
+	padding: 0 15px;
+}
+
 .u-pull-right {
     float: right !important;
 }
