@@ -37,4 +37,5 @@ posts:
   drafts_dir: _drafts
   order: Desc
   rss: rss.xml
-  default: {}
+  default:
+    permalink: /{{ parent }}/{{ slug }}
