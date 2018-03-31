@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<meta name="language" content="english">
+<meta http-equiv="content-type" content="text/html">
+<meta name="author" content="{{ site.data.author }}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="format-detection" content="telephone=yes"/>
+<meta name="HandheldFriendly" content="true"/>
+
+{% if page.collection == 'posts' %}
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+{% else %}
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+{% endif %}
+
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="icon" href="/assets/favicon.ico">
+
+<link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS" />

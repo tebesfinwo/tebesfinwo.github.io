@@ -1,65 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"
-		<link rel="canonical" href="http://www.johnsonooi.com/">
-		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        {% if is_post %}
-			<title>{{ title }}</title>
-			<meta name="description" content="{{ description }}">
-			<meta name="author" content="Johnson Ooi">
-        {% else %}
-			<title>Johnson Ooi's blog</title>
-        {% endif %}
-
-		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
-		<link rel="stylesheet" type="text/css" href="/css/custom.css">
-		<link rel="icon" href="/assets/favicon.ico">
-		<link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS" />
+        {% include 'head.liquid' %}
     </head>
     <body>
         <div class="container">
-			<nav class="navbar">
-				<div class="container">
-					<ul class="navbar-list">
-						<li class="navbar-item">
-							<a class="navbar-link navbar-home" href="/">Johnson Ooi</a>
-						</li>
-						<li class="navbar-item u-pull-right">
-							<a class="navbar-link" href="/rss.xml">RSS</a>
-						</li>
-						<li class="navbar-item u-pull-right">
-							<a class="navbar-link" href="/about">About</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link navbar-home" href="/">Johnson Ooi</a>
+                        </li>
+                        <li class="navbar-item u-pull-right">
+                            <a class="navbar-link" href="/rss.xml">RSS</a>
+                        </li>
+                        <li class="navbar-item u-pull-right">
+                            <a class="navbar-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <main class="row content">
                 <div class="twelve column">
-                    {% if is_post %}
-                        {% include '_layouts/post.liquid' %}
-                    {% else %}
-                        {{ content }}
-                    {% endif %}
+                     {% if page.collection == 'posts' %}
+                          {% include 'post.liquid' %}
+                     {% else %}
+                          {{ page.content }}
+                     {% endif %}
                 </div>
             </main>
-			<footer class="row footer">
-				<div class="twelve column">
-					<div class="copyright">
-						<strong>
-						Copyright &copy; 2017 <a href="/">JOHNSON OOI</a>
-						</strong>
-					</div>
-					<div>
-						<strong>
-						Powered by <a target="_blank" href="https://github.com/cobalt-org/cobalt.rs">COBALT</a>
-						& <a target="_blank" href="http://getskeleton.com/">SKELETON</a>
-						</strong>
-					</div>	
-				</div>
-			</footer>
+            <footer class="row footer">
+                {% include 'footer.liquid' %}
+            </footer>
         </div>
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -71,5 +43,5 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-	</body>
+    </body>
 </html>

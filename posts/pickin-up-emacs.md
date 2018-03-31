@@ -1,11 +1,8 @@
-extends: default.liquid
-
 title: Picking Up Emacs
 description: Picking Up Emacs
-date: 27 January 2015 21:00:30 -0500
+published_date: 2015-01-27 21:00:30 -0500
+layout: default.liquid
 ---
-
-
 ### Basic commands that I need to be "quite" productive in Emacs
 
 #### Basic Navigation

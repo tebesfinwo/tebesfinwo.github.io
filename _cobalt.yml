@@ -1,0 +1,39 @@
+# Build options
+source: "."
+template_extensions:
+  - md
+  - liquid
+include_drafts: false
+ignore:
+  - .git/*
+destination: _site
+
+# Site options
+site:
+  title: Johnson Ooi's blog
+  description: Some of random thoughts.
+  base_url: johnsonooi.com
+  data:
+    author: Johnson Ooi
+    cobalt:
+      link: https://github.com/cobalt-org/cobalt.rs
+    skeleton:
+      link: http://getskeleton.com
+
+# Page/Post options
+default:
+  excerpt_separator: "\n\n"
+  is_draft: false
+syntax_highlight:
+  theme: "base16-ocean.dark"
+assets:
+  sass:
+    style: Nested
+pages:
+  default: {}
+posts:
+  dir: posts
+  drafts_dir: _drafts
+  order: Desc
+  rss: rss.xml
+  default: {}

@@ -1,11 +1,8 @@
-extends: default.liquid
-
+published_date: 2014-08-14 21:00:30 -0500
 title: Hello World!
 description: Hello World!
-date: 18 August 2014 21:00:30 -0500
+layout: default.liquid
 ---
-
-
 ```clojure
 (println "Hello World")
 ```
