@@ -16,7 +16,7 @@ site:
   data:
     author: Johnson Ooi
     cobalt:
-      link: https://github.com/cobalt-org/cobalt.rs
+      link: https://cobalt-org.github.io/
     skeleton:
       link: http://getskeleton.com
 
