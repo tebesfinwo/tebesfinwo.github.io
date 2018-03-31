@@ -30,7 +30,8 @@ assets:
   sass:
     style: Nested
 pages:
-  default: {}
+  default:
+    permalink: /{{ slug }}
 posts:
   dir: posts
   drafts_dir: _drafts
