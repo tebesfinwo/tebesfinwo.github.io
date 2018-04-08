@@ -6,6 +6,7 @@ template_extensions:
 include_drafts: false
 ignore:
   - .git/*
+  - node_modules/*
 destination: _site
 
 # Site options
