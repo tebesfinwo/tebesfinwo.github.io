@@ -4,35 +4,6 @@
         {% include 'head.liquid' %}
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar">
-                <div class="container">
-                    <ul class="navbar-list">
-                        <li class="navbar-item">
-                            <a class="navbar-link navbar-home" href="/">Johnson Ooi</a>
-                        </li>
-                        <li class="navbar-item u-pull-right">
-                            <a class="navbar-link" href="/rss.xml">RSS</a>
-                        </li>
-                        <li class="navbar-item u-pull-right">
-                            <a class="navbar-link" href="/about">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <main class="row content">
-                <div class="twelve column">
-                     {% if page.collection == 'posts' %}
-                          {% include 'post.liquid' %}
-                     {% else %}
-                          {{ page.content }}
-                     {% endif %}
-                </div>
-            </main>
-            <footer class="row footer">
-                {% include 'footer.liquid' %}
-            </footer>
-        </div>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-48789013-1']);
@@ -43,6 +14,5 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-        <script src="/assets/js/main.js" type="text/script"></script>
     </body>
 </html>
