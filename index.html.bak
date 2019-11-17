@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta name="language" content="english">
+<meta http-equiv="content-type" content="text/html">
+<meta name="author" content="Johnson Ooi">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="format-detection" content="telephone=yes"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+    <title>Johnson Ooi's blog</title>
+    <meta name="description" content="Some of random thoughts.">
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link href="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T2P8////fwYKAOOoAQw4w4CRkZEBFr4gNghgC2+CBqAbhG4IdQ3AZhvJLsDmX7LCgNjEOZoSGXCnRGIDEQBKImnRn2T37wAAAABJRU5ErkJggg==" rel=icon>
+<style type="text/css">
+    body {
+        background: #FFF url(/assets/img/soba_compressed.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-48789013-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>
