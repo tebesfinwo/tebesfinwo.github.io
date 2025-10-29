@@ -21,13 +21,21 @@ background-size: contain;
 }
 </style>
 </head>
-<body data-random-image="halloween_1.png halloween_2.png halloween_3.png halloween_4.png">
+<body data-random-image="halloween_1.png halloween_2.png halloween_3.png halloween_4.png halloween_5.png halloween_6.png halloween_7.png">
 <script type="text/javascript">
 const image = document.querySelector('body[data-random-image]');
 const sources = image.dataset.randomImage.split(" ");
-const randomSource = sources[Math.floor(Math.random() * sources.length)]
+let halloween_idx = localStorage.getItem("halloween_idx");
 
-document.body.style.backgroundImage = `url('../../assets/img/halloween/tak-man/${randomSource}')`;
+if (halloween_idx == null) {
+  halloween_idx = Math.floor(Math.random() * sources.length)
+} else {
+  halloween_idx = parseInt(halloween_idx) + 1;
+  halloween_idx = halloween_idx % sources.length
+}
+
+localStorage.setItem("halloween_idx", halloween_idx);
+document.body.style.backgroundImage = `url('../../assets/img/halloween/tak-man/${sources[halloween_idx]}')`;
 </script>
 <script type="text/javascript">
 var _gaq = _gaq || [];
